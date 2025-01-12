@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Inter;
+    src: url(../font/inter/Inter_18pt-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Inter;
+    outline: none;
+}
+a{
+    color: black;
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+}
+section {
+    display: flex;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #e2e6ea;
+    color: #007bff;
+}
+
+.fa-person,
+.fa-house,
+.fa-gear {
+    font-size: 18px;
+}
+.chat{
+    padding: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+}
+.title{
+    color: rgb(170, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+}
+.result{
+    color: #4b4848;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.user-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 20px 8px 10px;
+    border: 0.5px solid #ddd;
+    width: 380px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.content h2 {
+    font-size: 16px;
+}
+
+.content p {
+    font-size: 14px;
+    color: #4b4848;
+}
+
+.input-container {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 380px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.all-button {
+    width: 90px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.all-button:hover {
+    background-color: #0056b3;
+}
+.icons{
+    margin: 15px 20px 0 30px ;
+    display: flex;
+    gap: 135px;
+    height: 70px;
+}
+.icons > .item > i {
+    font-size: 20px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.item:hover {
+    color: #007bff;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 30px 0 30px ;
+}
+.inner{
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.fa-pen{
+    font-size: 25px;
+    color: #007bff; 
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.flex{
+    display: flex;
+    gap: 60px;
+    margin: 20px 30px 0 30px ;
+}
+.latest{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0 30px ;
+}
+.offers,
+.visit,
+.news,
+.camera{
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #007bff;
+}
+.str{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.news p {
+    font-size: 18px;
+}
+.camera p {
+    font-size: 18px;
+}
+.offers h2, i{
+    font-size: 18px;
+}
+.visit h2, i{
+    font-size: 18px;
+}
+.images{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.latest-right h3{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.latest-right h5 {
+    color: #4b4848;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 400;
+}
